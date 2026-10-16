@@ -1,13 +1,6 @@
 
-////////////////////////////////////////////////////////////////////
-const numeri = [50, 59, 90]
-let numeroPiuGrandeTrovato = 0;
-for (let i = 0; i < numeri.length; i++) {
-    const numero = numeri[i]
+const prodotti = ["latte", "uova", "pane"];
 
-    if (numero > numeroPiuGrandeTrovato) {
-        numeroPiuGrandeTrovato = numero
-    }
-
-    console.log(numeroPiuGrandeTrovato)
-}
+prodotti.forEach(prodotto => {
+    console.log(`articolo presente: ${prodotto}`);
+});

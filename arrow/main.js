@@ -1,9 +1,10 @@
-function calcolaSconto (prezzo ) {
-return prezzo * 0.9 ;   
+function prezzoConIva(prezzo) {
+    return prezzo * 122 / 100;
 }
-const calcolaSconto = prezzo => prezzo * 0.9
-const prezzoTastiera = 100;
-const prezzoTastieraScontato = calcolaSconto(prezzoTastiera);
-console.log(`La tastiera costa ${prezzoTastiera}€ ma lo pagherai solo ${prezzoTastieraScontato}€`);
+const prezzoConIvaArrow  = prezzo =>  prezzo * 122 / 100
 
+const prezzo = 100;
+const totaleConIva = prezzoConIva(prezzo);
 
+console.log(totaleConIva);
+console.log(prezzoConIvaArrow (100))
